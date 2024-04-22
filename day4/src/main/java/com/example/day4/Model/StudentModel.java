@@ -13,8 +13,8 @@ public class StudentModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int regNo;
     private String studentName;
+
     @Column(name = "Marks")
-    
     private String studentMarks;
     public int getRegNo() {
         return regNo;

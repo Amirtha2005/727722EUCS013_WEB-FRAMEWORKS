@@ -18,7 +18,11 @@ public class StudentController {
         Student obj=new Student();
         obj.setStudentName("John");
         obj.setMessage("Welcome, John!");
+        Student obj1=new Student();
+        obj1.setStudentName("Amir");
+        obj1.setMessage("study hard");
         students.add(obj);
+        students.add(obj1);
         return students;
     }
 }
