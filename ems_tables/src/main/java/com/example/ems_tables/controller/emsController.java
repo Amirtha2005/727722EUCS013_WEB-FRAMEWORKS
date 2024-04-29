@@ -1,6 +1,11 @@
 package com.example.ems_tables.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -54,6 +59,21 @@ public class emsController {
 
         service4.addInfo4(obj4);
         return "added4";
+    }
+
+    // @GetMapping("/getByBusName/{busName}")
+    // public List<employee> getById(@PathVariable int emp_id){
+    //     return service2.getById(emp_id);
+    // }
+
+    @DeleteMapping("/getByEmpId/{emp_id}")
+    public void getByEmpId(@PathVariable int emp_id){
+        service4.getByEmpId(emp_id); 
+    }
+
+    @DeleteMapping("/deleteRow/{dept_name}")
+    public void getByName(@PathVariable String dept_name){
+        service1.getByName(dept_name);
     }
 
 }

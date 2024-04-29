@@ -1,14 +1,14 @@
 package com.example.ems_tables.model;
 
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+//import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
+//import jakarta.persistence.JoinColumn;
+//import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -32,9 +32,9 @@ public class leaveForm {
     private String reason;
     
 
-    @OneToOne()
-    @JoinColumn(name = "leave_ref")
-    @JsonBackReference
-    private employee e;
+    // @OneToOne()
+    // @JoinColumn(name = "leave_ref")
+    // @JsonBackReference
+    // private employee e;
 
 }
