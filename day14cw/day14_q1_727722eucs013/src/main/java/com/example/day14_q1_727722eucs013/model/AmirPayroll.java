@@ -1,4 +1,4 @@
-package com.example.day14ce1.model;
+package com.example.day14_q1_727722eucs013.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "payroll")
-public class Payroll {
+public class AmirPayroll {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long payrollId;

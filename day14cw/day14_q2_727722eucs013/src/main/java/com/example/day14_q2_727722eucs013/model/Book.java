@@ -1,4 +1,4 @@
-package com.example.day14ce2.model;
+package com.example.day14_q2_727722eucs013.model;
 
 
 import jakarta.persistence.Entity;

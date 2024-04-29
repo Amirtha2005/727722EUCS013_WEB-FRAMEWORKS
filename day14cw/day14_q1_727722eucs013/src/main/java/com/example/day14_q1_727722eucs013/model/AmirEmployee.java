@@ -1,4 +1,4 @@
-package com.example.day14ce1.model;
+package com.example.day14_q1_727722eucs013.model;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -13,7 +13,7 @@ import jakarta.transaction.Transactional;
 @Entity
 @Table(name = "employee")
 @Transactional
-public class Employee {
+public class AmirEmployee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long employeeId;
@@ -23,7 +23,7 @@ public class Employee {
     
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "payrollId")
-    Payroll payroll;
+    AmirPayroll payroll;
     
     public Long getEmployeeId() {
         return employeeId;
@@ -57,11 +57,11 @@ public class Employee {
         this.mobile = mobile;
     }
 
-    public Payroll getPayroll() {
+    public AmirPayroll getPayroll() {
         return payroll;
     }
 
-    public void setPayroll(Payroll payroll) {
+    public void setPayroll(AmirPayroll payroll) {
         this.payroll = payroll;
     }
 

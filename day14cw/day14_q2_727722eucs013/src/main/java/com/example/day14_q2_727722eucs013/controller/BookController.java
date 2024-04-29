@@ -1,4 +1,4 @@
-package com.example.day14ce2.controller;
+package com.example.day14_q2_727722eucs013.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.day14ce2.model.Book;
-import com.example.day14ce2.service.BookService;
+import com.example.day14_q2_727722eucs013.model.Book;
+import com.example.day14_q2_727722eucs013.service.BookService;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 

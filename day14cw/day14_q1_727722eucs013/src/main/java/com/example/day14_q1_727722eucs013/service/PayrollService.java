@@ -1,21 +1,22 @@
-package com.example.day14ce1.service;
+package com.example.day14_q1_727722eucs013.service;
 
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.day14ce1.model.Payroll;
-import com.example.day14ce1.repository.PayrollRepo;
+import com.example.day14_q1_727722eucs013.model.AmirPayroll;
+import com.example.day14_q1_727722eucs013.repository.PayrollRepo;
+
 
 @Service
 public class PayrollService {
     @Autowired
     PayrollRepo payrollRepo;
 
-    public Payroll addPayroll(Long id,Payroll payroll)
+    public AmirPayroll addPayroll(Long id,AmirPayroll payroll)
     {
-        Payroll avail = payrollRepo.findById(id).orElse(null);
+        AmirPayroll avail = payrollRepo.findById(id).orElse(null);
 
         if(avail!=null){
             avail.setAmount(payroll.getAmount());
@@ -26,7 +27,7 @@ public class PayrollService {
         return null;
     }
 
-    public Optional<Payroll> getPayroll(Long employeeId)
+    public Optional<AmirPayroll> getPayroll(Long employeeId)
     {
         return payrollRepo.findById(employeeId);
     }
